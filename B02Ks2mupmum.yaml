@@ -1,0 +1,166 @@
+inputs:
+  - /Event/Dimuon/Phys/B2KpiX2MuMuDDDarkBosonLine/Particles
+descriptorTemplate: >-
+  ${B0}[B0 -> ${KS0}(KS0 -> ${muplus}mu+ ${muminus}mu-) ${Kplus}K+
+  ${piminus}pi-]CC
+tools:
+  - TupleToolKinematic:
+      ExtraName: ''
+      Verbose: false
+      MaxPV: 100
+      Transporter: ParticleTransporter:PUBLIC
+  - TupleToolPid:
+      ExtraName: ''
+      Verbose: false
+      MaxPV: 100
+  - TupleToolANNPID:
+      ExtraName: ''
+      Verbose: false
+      MaxPV: 100
+      ANNPIDTunes:
+        - MC12TuneV2
+        - MC12TuneV3
+        - MC12TuneV4
+        - MC15TuneV1
+      PIDTypes:
+        - Electron
+        - Muon
+        - Pion
+        - Kaon
+        - Proton
+        - Ghost
+  - TupleToolGeometry:
+      ExtraName: ''
+      Verbose: false
+      MaxPV: 100
+      RefitPVs: false
+      PVReFitter: LoKi::PVReFitter:PUBLIC
+      FillMultiPV: false
+  - TupleToolEventInfo:
+      ExtraName: ''
+      Verbose: false
+      MaxPV: 100
+  - TupleToolPrimaries:
+      ExtraName: ''
+      Verbose: false
+      MaxPV: 100
+      InputLocation: Rec/Vertex/Primary
+  - TupleToolTISTOS:
+      ExtraName: ''
+      Verbose: false
+      MaxPV: 100
+      VerboseL0: false
+      VerboseHlt1: false
+      VerboseHlt2: false
+      VerboseStripping: false
+      FillL0: true
+      FillHlt1: true
+      FillHlt2: true
+      FillStripping: false
+      TriggerList: []
+      Hlt1TriggerTisTosName: Hlt1TriggerTisTos
+      Hlt2TriggerTisTosName: Hlt2TriggerTisTos
+      L0TriggerTisTosName: L0TriggerTisTos
+      PIDList: []
+      TopParticleOnly: false
+      Hlt1Phys: >-
+        Hlt1(?!ODIN)(?!L0)(?!Lumi)(?!Tell1)(?!MB)(?!NZS)(?!Velo)(?!BeamGas)(?!Incident).*Decision
+      Hlt2Phys: >-
+        Hlt2(?!Forward)(?!DebugEvent)(?!Express)(?!Lumi)(?!Transparent)(?!PassThrough).*Decision
+      TIS: true
+      TOS: true
+      TUS: false
+      TPS: false
+branches:
+  B0:
+    particle: B0
+    tools: []
+  KS0:
+    particle: KS0
+    tools: []
+  muplus:
+    particle: mu+
+    tools: []
+  muminus:
+    particle: mu-
+    tools: []
+  Kplus:
+    particle: K+
+    tools: []
+  piminus:
+    particle: pi-
+    tools: []
+groups:
+  B0,KS0,Kplus,muminus,muplus,piminus:
+    particles:
+      - B0
+      - KS0
+      - K+
+      - mu-
+      - mu+
+      - pi-
+    tools:
+      - TupleToolKinematic:
+          ExtraName: ''
+          Verbose: false
+          MaxPV: 100
+          Transporter: ParticleTransporter:PUBLIC
+      - TupleToolPid:
+          ExtraName: ''
+          Verbose: false
+          MaxPV: 100
+      - TupleToolANNPID:
+          ExtraName: ''
+          Verbose: false
+          MaxPV: 100
+          ANNPIDTunes:
+            - MC12TuneV2
+            - MC12TuneV3
+            - MC12TuneV4
+            - MC15TuneV1
+          PIDTypes:
+            - Electron
+            - Muon
+            - Pion
+            - Kaon
+            - Proton
+            - Ghost
+      - TupleToolGeometry:
+          ExtraName: ''
+          Verbose: false
+          MaxPV: 100
+          RefitPVs: false
+          PVReFitter: LoKi::PVReFitter:PUBLIC
+          FillMultiPV: false
+      - TupleToolPropertime:
+          ExtraName: ''
+          Verbose: false
+          MaxPV: 100
+          FitToPV: false
+      - TupleToolTISTOS:
+          ExtraName: ''
+          Verbose: false
+          MaxPV: 100
+          VerboseL0: false
+          VerboseHlt1: false
+          VerboseHlt2: false
+          VerboseStripping: false
+          FillL0: true
+          FillHlt1: true
+          FillHlt2: true
+          FillStripping: false
+          TriggerList: []
+          Hlt1TriggerTisTosName: Hlt1TriggerTisTos
+          Hlt2TriggerTisTosName: Hlt2TriggerTisTos
+          L0TriggerTisTosName: L0TriggerTisTos
+          PIDList: []
+          TopParticleOnly: false
+          Hlt1Phys: >-
+            Hlt1(?!ODIN)(?!L0)(?!Lumi)(?!Tell1)(?!MB)(?!NZS)(?!Velo)(?!BeamGas)(?!Incident).*Decision
+          Hlt2Phys: >-
+            Hlt2(?!Forward)(?!DebugEvent)(?!Express)(?!Lumi)(?!Transparent)(?!PassThrough).*Decision
+          TIS: true
+          TOS: true
+          TUS: false
+          TPS: false
+name: DecayTreeTuple/B02Ks2mupmum

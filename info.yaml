@@ -1,0 +1,66 @@
+defaults:
+  application: DaVinci/v46r11
+  wg: OpenData
+  inform: []
+  automatically_configure: true
+  output: DVNtuple.root
+job0:
+  input:
+    bk_query: >-
+      /LHCb/Collision11/Beam3500GeV-VeloClosed-MagUp/Real
+      Data/Reco14/Stripping21r1p2/90000000/DIMUON.DST
+  options:
+    - B02Ks2mupmum.py
+job3:
+  input:
+    bk_query: >-
+      /LHCb/Collision12/Beam4000GeV-VeloClosed-MagDown/Real
+      Data/Reco14/Stripping21r0p2/90000000/DIMUON.DST
+  options:
+    - B02Ks2mupmum.py
+job1:
+  input:
+    bk_query: >-
+      /LHCb/Collision12/Beam4000GeV-VeloClosed-MagDown/Real
+      Data/Reco14/Stripping21/90000000/DIMUON.DST
+  options:
+    - B02Ks2mupmum.py
+job4:
+  input:
+    bk_query: >-
+      /LHCb/Collision12/Beam4000GeV-VeloClosed-MagUp/Real
+      Data/Reco14/Stripping21/90000000/DIMUON.DST
+  options:
+    - B02Ks2mupmum.py
+job6:
+  input:
+    bk_query: >-
+      /LHCb/Collision17/Beam6500GeV-VeloClosed-MagDown/Real
+      Data/Reco17/Stripping29r2/90000000/BHADRON.MDST
+  options:
+    - B02K0mupmum.py
+  root_in_tes: /Event/Bhadron
+job7:
+  input:
+    bk_query: >-
+      /LHCb/Collision17/Beam6500GeV-VeloClosed-MagUp/Real
+      Data/Reco17/Stripping29r2/90000000/BHADRON.MDST
+  options:
+    - B02K0mupmum.py
+  root_in_tes: /Event/Bhadron
+job2:
+  input:
+    bk_query: >-
+      /LHCb/Collision12/Beam4000GeV-VeloClosed-MagDown/Real
+      Data/Reco14/Stripping21r0p1a/90000000/BHADRON.MDST
+  options:
+    - B02K0mupmum.py
+  root_in_tes: /Event/Bhadron
+job5:
+  input:
+    bk_query: >-
+      /LHCb/Collision12/Beam4000GeV-VeloClosed-MagUp/Real
+      Data/Reco14/Stripping21r0p1a/90000000/BHADRON.MDST
+  options:
+    - B02K0mupmum.py
+  root_in_tes: /Event/Bhadron
