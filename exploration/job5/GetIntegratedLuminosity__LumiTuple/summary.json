@@ -1,0 +1,18 @@
+{
+  "entries": 1,
+  "sampled_entries": 1,
+  "branches": 2,
+  "types": {
+    "double": 2
+  },
+  "compressed_bytes": 203,
+  "uncompressed_bytes": 203,
+  "nonfinite_values": 0,
+  "constant_branches_in_sample": 2,
+  "first_rows": [
+    {
+      "IntegratedLuminosity": 0.5351272603137903,
+      "IntegratedLuminosityErr": 0.006207476219639968
+    }
+  ]
+}

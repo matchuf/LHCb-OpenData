@@ -1,0 +1,36 @@
+{
+  "entries": 864,
+  "sampled_entries": 864,
+  "branches": 498,
+  "types": {
+    "double": 305,
+    "int32_t": 21,
+    "float[3][3]": 13,
+    "bool": 138,
+    "uint32_t": 7,
+    "uint64_t": 4,
+    "int16_t": 1,
+    "float[]": 9
+  },
+  "compressed_bytes": 1687398,
+  "uncompressed_bytes": 2887787,
+  "nonfinite_values": 0,
+  "constant_branches_in_sample": 69,
+  "negative_dimuon_m2": 0,
+  "unique_events_in_sample": 751,
+  "events_with_multiple_rows_in_sample": 85,
+  "polarity_counts": {
+    "1": 864
+  },
+  "pv_length_mismatches": {
+    "PVX": 0,
+    "PVYERR": 0,
+    "PVXERR": 0,
+    "PVZ": 0,
+    "PVY": 0,
+    "PVZERR": 0,
+    "PVNDOF": 0,
+    "PVCHI2": 0,
+    "PVNTRACKS": 0
+  }
+}
