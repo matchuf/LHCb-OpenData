@@ -1,0 +1,3 @@
+branch,typename,shape,category,title,count_branch,compressed_bytes,uncompressed_bytes,baskets
+IntegratedLuminosity,double,scalar,evento,IntegratedLuminosity/D,,100,100,1
+IntegratedLuminosityErr,double,scalar,evento,IntegratedLuminosityErr/D,,103,103,1

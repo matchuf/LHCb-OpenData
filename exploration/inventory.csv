@@ -1,0 +1,16 @@
+file,file_bytes,tree,entries,sampled_entries,branches,unique_events_in_sample,bk_query,options
+job0.root,5255,GetIntegratedLuminosity/LumiTuple,1,1,2,,/LHCb/Collision11/Beam3500GeV-VeloClosed-MagUp/Real Data/Reco14/Stripping21r1p2/90000000/DIMUON.DST,B02Ks2mupmum.py
+job1.root,75683,B02Ks2mupmum/DecayTree,4,4,501,4,/LHCb/Collision12/Beam4000GeV-VeloClosed-MagDown/Real Data/Reco14/Stripping21/90000000/DIMUON.DST,B02Ks2mupmum.py
+job1.root,75683,GetIntegratedLuminosity/LumiTuple,1,1,2,,/LHCb/Collision12/Beam4000GeV-VeloClosed-MagDown/Real Data/Reco14/Stripping21/90000000/DIMUON.DST,B02Ks2mupmum.py
+job2.root,5825212,B02K0mupmum/DecayTree,3042,3042,498,2609,/LHCb/Collision12/Beam4000GeV-VeloClosed-MagDown/Real Data/Reco14/Stripping21r0p1a/90000000/BHADRON.MDST,B02K0mupmum.py
+job2.root,5825212,GetIntegratedLuminosity/LumiTuple,1,1,2,,/LHCb/Collision12/Beam4000GeV-VeloClosed-MagDown/Real Data/Reco14/Stripping21r0p1a/90000000/BHADRON.MDST,B02K0mupmum.py
+job3.root,65629,B02Ks2mupmum/DecayTree,1,1,501,1,/LHCb/Collision12/Beam4000GeV-VeloClosed-MagDown/Real Data/Reco14/Stripping21r0p2/90000000/DIMUON.DST,B02Ks2mupmum.py
+job3.root,65629,GetIntegratedLuminosity/LumiTuple,1,1,2,,/LHCb/Collision12/Beam4000GeV-VeloClosed-MagDown/Real Data/Reco14/Stripping21r0p2/90000000/DIMUON.DST,B02Ks2mupmum.py
+job4.root,78697,B02Ks2mupmum/DecayTree,5,5,501,5,/LHCb/Collision12/Beam4000GeV-VeloClosed-MagUp/Real Data/Reco14/Stripping21/90000000/DIMUON.DST,B02Ks2mupmum.py
+job4.root,78697,GetIntegratedLuminosity/LumiTuple,1,1,2,,/LHCb/Collision12/Beam4000GeV-VeloClosed-MagUp/Real Data/Reco14/Stripping21/90000000/DIMUON.DST,B02Ks2mupmum.py
+job5.root,5745209,B02K0mupmum/DecayTree,2989,2989,498,2592,/LHCb/Collision12/Beam4000GeV-VeloClosed-MagUp/Real Data/Reco14/Stripping21r0p1a/90000000/BHADRON.MDST,B02K0mupmum.py
+job5.root,5745209,GetIntegratedLuminosity/LumiTuple,1,1,2,,/LHCb/Collision12/Beam4000GeV-VeloClosed-MagUp/Real Data/Reco14/Stripping21r0p1a/90000000/BHADRON.MDST,B02K0mupmum.py
+job6.root,1584467,B02K0mupmum/DecayTree,805,805,498,674,/LHCb/Collision17/Beam6500GeV-VeloClosed-MagDown/Real Data/Reco17/Stripping29r2/90000000/BHADRON.MDST,B02K0mupmum.py
+job6.root,1584467,GetIntegratedLuminosity/LumiTuple,1,1,2,,/LHCb/Collision17/Beam6500GeV-VeloClosed-MagDown/Real Data/Reco17/Stripping29r2/90000000/BHADRON.MDST,B02K0mupmum.py
+job7.root,1707468,B02K0mupmum/DecayTree,864,864,498,751,/LHCb/Collision17/Beam6500GeV-VeloClosed-MagUp/Real Data/Reco17/Stripping29r2/90000000/BHADRON.MDST,B02K0mupmum.py
+job7.root,1707468,GetIntegratedLuminosity/LumiTuple,1,1,2,,/LHCb/Collision17/Beam6500GeV-VeloClosed-MagUp/Real Data/Reco17/Stripping29r2/90000000/BHADRON.MDST,B02K0mupmum.py

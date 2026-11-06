@@ -1,0 +1,5 @@
+/.exploration-deps/
+/.venv*/
+/.publish-repo/
+__pycache__/
+*.py[cod]
